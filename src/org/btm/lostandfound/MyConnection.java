@@ -33,7 +33,7 @@ public class MyConnection extends HttpServlet {
 		Connection con=null;
 		PreparedStatement pstmt=null;
 		FileInputStream fis=null;
-		String qry="insert into btm.emp values(?,?,?,?,?,?,?,?,?,?)";
+		String qry="insert into btm.emp values(?,?,?,?,?,?,?,?,?)";
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
@@ -50,8 +50,6 @@ public class MyConnection extends HttpServlet {
 			pstmt.setString(8,email);
 			pstmt.setString(9,phone);
 			
-			fis=new FileInputStream(image);
-			pstmt.setBinaryStream(10, (InputStream) fis, (int) (image.length()));
 			
 			pstmt.executeUpdate();
 		} catch (ClassNotFoundException |SQLException e) {
