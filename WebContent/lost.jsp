@@ -101,13 +101,7 @@ return( true );
     		<input type="text" class="form-control" placeholder="email_id" name="email_id">
     	</div>
     </div>
-    <div class="row">
-  	<div class="form-group col-xl-6 offset-lg-3">
-    		<label for="inputname">Attachment</label>
-    		<input type="file" class="form-control" placeholder="" >(size less then 64kb)
-    	</div>
-    	
-    </div>
+   
     <button type="submit" class="btn btn-primary offset-lg-3">Submit</button>
     
     
