@@ -30,8 +30,6 @@ public class FirstSevlet extends HttpServlet {
 		Connection con=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs =null;
-		//OutputStream image;
-
 
 		String qry="select  *  from btm.emp where item =? and loc=?  and ldate=? ";
 		try
@@ -52,13 +50,6 @@ public class FirstSevlet extends HttpServlet {
 				String lname=rs.getString(7);
 				String email=rs.getString(8);
 				String phone=rs.getString(9);
-				
-				
-//				byte barray[]=rs.getBytes(10);
-//				resp.setContentType("image/jpg");
-//				image=resp.getOutputStream();
-//				image.write(barray);
-//				image.flush();
 
 
 				PrintWriter out=resp.getWriter();
